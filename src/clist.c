@@ -46,7 +46,7 @@ void	list_print(t_list* list)
 	i = 0;
 	while (i < list->length)
 	{
-		write(1, (char*)list->arr + 1, 1);
+		write(1, (char *)list->arr + i, 1);
 		i++;
 	}
 }
