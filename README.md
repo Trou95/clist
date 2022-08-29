@@ -86,7 +86,7 @@ A simple project for creating dynamic lists with different data types in c
 	list_remove_at(list, list_find(list, 10));
 	
 	for(int i = 0; i < list->length; i++)
-		printf("%d\n", *(char*)list_item_at(list, i));
+		printf("%d\n", *(int*)list_item_at(list, i));
     
     
 
