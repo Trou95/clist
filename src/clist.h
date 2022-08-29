@@ -2,7 +2,6 @@
 # define CLIST_H
 
 # include <stdio.h>
-# include <unistd.h>
 # include <stdlib.h>
 
 # define CLIST_SIZE 2
