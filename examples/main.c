@@ -1,21 +1,18 @@
-#include "../src/clist.h"
+#include "clist.h"
 #include <string.h>
 
-
-int main()
+int	main(void)
 {
-
-	c_list* list = list_create(sizeof(char));
+	t_list* list;
 	char str[] = "friend";
 
-	for (int i = 0; i < 7; i++)
+	for (int i = 0; i < strlen(str); i++)
 		list_add(list, str[i]);
 
 	int e = list_find(list, 'e');
 	for (int i = 0; i < e; i++)
 		list_remove_at(list, e - i - 1);
 
-	printf(str); printf(" > "); list_print(list);
-	while (e);
-
+	write(1, str, strlen(str)); write(1, " > ", 3); list_print(list);
+	
 }
