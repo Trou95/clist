@@ -6,6 +6,7 @@ int	main(void)
 	t_list* list;
 	char str[] = "friend";
 
+	list = list_create(sizeof(char));
 	for (int i = 0; i < strlen(str); i++)
 		list_add(list, str[i]);
 
