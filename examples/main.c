@@ -15,5 +15,6 @@ int	main(void)
 		list_remove_at(list, e - i - 1);
 
 	write(1, str, strlen(str)); write(1, " > ", 3); list_print(list);
+	while (e);
 	
 }
